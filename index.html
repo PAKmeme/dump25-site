@@ -226,18 +226,27 @@
         <h2>JOIN THE MISSION</h2>
         <p>Together, let’s make $DUMP a symbol. Spread the word. Talk about it. Meme it. $DUMP is yours now.</p>
       </div>
-    </div>
-  </div>
 
-  <script>
-    // Trigger vibration on BAM! logo
-    window.addEventListener('load', () => {
-      setTimeout(() => {
-        if (window.navigator.vibrate) {
-          window.navigator.vibrate(100);
-        }
-      }, 700);
+      <div class="bubble">
+        <h2>CONTRACT ADDRESS</h2>
+        <p style="word-break: break-all;">
+          <a href="https://bscscan.com/token/0xe70894aa930BB5E43505867b05C28523CE66D347" target="_blank" style="color: #0088dd; text-decoration: none;">
+            0xe70894aa930BB5E43505867b05C28523CE66D347
+          </a>
+        </p>
+        <button onclick="copyAddress()" style="padding: 10px 20px; font-family: 'Fredoka One', cursive; font-size: 1rem; border: 2px solid #000; background: #ffcc00; color: #000; border-radius: 10px; box-shadow: 2px 2px 0 #000; cursor: pointer;">
+          Copy Address
+        </button>
+      </div>
+</div>
+  </div>
+<script>
+  function copyAddress() {
+    const address = "0xe70894aa930BB5E43505867b05C28523CE66D347";
+    navigator.clipboard.writeText(address).then(() => {
+      alert('Contract address copied!');
     });
-  </script>
+  }
+</script>
 </body>
 </html>
