@@ -7,7 +7,14 @@
    <link rel="icon" href="logo.png" type="image/png">
    <style>
      @import url('https://fonts.googleapis.com/css2?family=Anton&family=Fredoka+One&display=swap');
- 
+ #x-follow-fixed {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1000;
+}
+
      * {
        box-sizing: border-box;
      }
@@ -193,7 +200,8 @@
        </div>
        <div class="title">THE DUMP25</div>
        <div class="subtitle">($DUMP)</div>
- 
+       <div id="x-follow-fixed"> 
+       <a href="https://twitter.com/x?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-size="large" data-show-screen-name="false" data-lang="en" data-show-count="false">Follow @x</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
        <a class="buy-button" href="https://pancakeswap.finance/swap?outputCurrency=0xe70894aa930BB5E43505867b05C28523CE66D347" target="_blank">BUY ON PANCAKESWAP</a>
  
        <div class="bubble">
