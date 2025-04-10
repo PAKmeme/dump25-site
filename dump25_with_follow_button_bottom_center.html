@@ -1,0 +1,50 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>DUMP25 - Comic Splash</title>
+  <link rel="icon" href="logo.png" type="image/png">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Anton&family=Fredoka+One&display=swap');
+
+    * { box-sizing: border-box; }
+    body, html {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      font-family: 'Arial', sans-serif;
+      background-color: #ff6f00;
+      background-image: radial-gradient(#ff8c1a 1px, transparent 1px),
+                        radial-gradient(#ff8c1a 1px, transparent 1px);
+      background-size: 20px 20px;
+      background-position: 0 0, 10px 10px;
+      overflow-x: hidden;
+    }
+
+    #x-follow-fixed {
+      position: fixed;
+      bottom: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 1000;
+    }
+  </style>
+</head>
+<body>
+
+  <div id="x-follow-fixed">
+    <a href="https://twitter.com/Thedump25?ref_src=twsrc%5Etfw"
+      class="twitter-follow-button"
+      data-size="large"
+      data-show-screen-name="false"
+      data-lang="en"
+      data-show-count="false">
+      Follow @Thedump25
+    </a>
+  </div>
+
+  <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+</body>
+</html>
